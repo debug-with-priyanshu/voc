@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Recipe Card</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="recipe-card">
+    <h1>🍰 Chocolate Cake</h1>
+    <img src="https://source.unsplash.com/600x400/?chocolate-cake" alt="Chocolate Cake" class="dish-image" />
+
+    <button id="toggle-ingredients">Show Ingredients</button>
+    <ul id="ingredients" class="hidden">
+      <li>2 cups flour</li>
+      <li>1 cup sugar</li>
+      <li>1 cup milk</li>
+      <li>½ cup cocoa powder</li>
+      <li>2 eggs</li>
+    </ul>
+
+    <div id="steps-section" class="steps">
+      <h2>Preparation Steps</h2>
+      <ol id="stepList">
+        <li>Preheat the oven to 350°F (175°C).</li>
+        <li>Mix dry ingredients together.</li>
+        <li>Add wet ingredients and mix until smooth.</li>
+        <li>Pour batter into a greased baking pan.</li>
+        <li>Bake for 30–35 minutes. Let cool before serving.</li>
+      </ol>
+      <button id="start-btn">Start Cooking</button>
+      <button id="next-step" class="hidden">Next</button>
+      <div class="progress-container">
+        <div class="progress-bar" id="progress"></div>
+      </div>
+    </div>
+
+    <p class="prep-info">Prep Time: 45 mins | Serves: 6</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
